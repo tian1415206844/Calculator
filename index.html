@@ -47,44 +47,28 @@
 				this.data1 = this.data;
 				this.data = '';
 				this.operator='+';
-				if(this.result.length<=10){
-					this.result += '+';
-				}else{
-					alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-				}
+				this.result += '+';
 			},
 			substract: function() {
 				this.operator='';
 				this.data1 = this.data;
 				this.data = '';
 				this.operator='-';
-				if(this.result.length<=10){
-					this.result += '-';
-				}else{
-					alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-				}
+				this.result += '-';
 			},
 			multiplicate: function() {
 				this.operator='';
 				this.data1 = this.data;
 				this.data = '';
 				this.operator='*';
-				if(this.result.length<=10){
-					this.result += '*';
-				}else{
-					alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-				}
+				this.result += '*';
 			},
 			divide: function() {
 				this.operator='';
 				this.data1 = this.data;
 				this.data = '';
 				this.operator='/';
-				if(this.result.length<=10){
-					this.result += '/';
-				}else{
-					alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-				}
+				this.result += '/';
 			},
 			equal: function() {
 				this.result = '';
@@ -107,89 +91,50 @@
 						default:
 							this.result = '';
 					}
+					this.result=this.result.substring(0,10);
 				}
 			},
 			number: function(event) {
 				switch (event.target.value) {
 				case '1':
 					this.data += '1';
-					if(this.result.length<=10){
-						this.result += '1';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '1';
 				break;
 				case '2':
 					this.data += '2';
-					if(this.result.length<=10){
-						this.result += '2';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '2';
 				break;
 				case '3':
 					this.data += '3';
-					if(this.result.length<=10){
-						this.result += '3';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '3';
 				break;
 				case '4':
 					this.data += '4';
-					if(this.result.length<=10){
-						this.result += '4';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '4';
 				break;
 				case '5':
 					this.data += '5';
-					if(this.result.length<=10){
-						this.result += '5';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '5';
 				break;
 				case '6':
 					this.data += '6';
-					if(this.result.length<=10){
-						this.result += '6';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '6';
 				break;
 				case '7':
 					this.data += '7';
-					if(this.result.length<=10){
-						this.result += '7';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '7';
 				break;
 				case '8':
 					this.data += '8';
-					if(this.result.length<=10){
-						this.result += '8';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '8';
 				break;
 				case '9':
 					this.data += '9';
-					if(this.result.length<=10){
-						this.result += '9';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '9';
 				break;
 				case '.':
 					this.data += '.';
-					if(this.result.length<=10){
-						this.result += '.';
-					}else{
-						alert("当前输入字符长度"+this.result.length+"超出允许输入字符最大长度：10");
-					}
+					this.result += '.';
 				break;
 				default:
 				this.data += '';
