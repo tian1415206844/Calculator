@@ -49,6 +49,21 @@
 					this.data='';
 					this.result = (parseFloat(this.data1) + parseFloat(this.data2)).toString();
 					this.data1 = this.result;
+				}else if(this.result.indexOf('-')!=-1){
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) - parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('*')!=-1){
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) * parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('/')!=-1){
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) / parseFloat(this.data2)).toString();
+					this.data1 = this.result;
 				}else{
 					this.data1 = this.data;
 					this.data = '';
@@ -58,10 +73,25 @@
 			},
 			substract: function() {
 				this.operator = '';
-				if (this.result.indexOf('-')!=-1) {
+				if (this.result.indexOf('+')!=-1) {
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) + parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('-')!=-1){
 					this.data2=this.data;
 					this.data='';
 					this.result = (parseFloat(this.data1) - parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('*')!=-1){
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) * parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('/')!=-1){
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) / parseFloat(this.data2)).toString();
 					this.data1 = this.result;
 				}else{
 					this.data1 = this.data;
@@ -72,10 +102,25 @@
 			},
 			multiplicate: function() {
 				this.operator = '';
-				if (this.result.indexOf('*')!=-1) {
+				if (this.result.indexOf('+')!=-1) {
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) + parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('-')!=-1){
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) - parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('*')!=-1){
 					this.data2=this.data;
 					this.data='';
 					this.result = (parseFloat(this.data1) * parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('/')!=-1){
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) / parseFloat(this.data2)).toString();
 					this.data1 = this.result;
 				}else{
 					this.data1 = this.data;
@@ -86,7 +131,22 @@
 			},
 			divide: function() {
 				this.operator = '';
-				if (this.result.indexOf('/')!=-1) {
+				if (this.result.indexOf('+')!=-1) {
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) + parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('-')!=-1){
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) - parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('*')!=-1){
+					this.data2=this.data;
+					this.data='';
+					this.result = (parseFloat(this.data1) * parseFloat(this.data2)).toString();
+					this.data1 = this.result;
+				}else if(this.result.indexOf('/')!=-1){
 					this.data2=this.data;
 					this.data='';
 					this.result = (parseFloat(this.data1) / parseFloat(this.data2)).toString();
