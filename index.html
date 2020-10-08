@@ -160,8 +160,10 @@
 			},
 			equal: function() {
 				this.result = '';
-				this.data2 = this.data;
-				this.data = '';
+				if(this.data!=''){
+					this.data2 = this.data;
+					this.data = '';
+				}
 				if (this.data1 != '' && this.data2 != '') {
 					switch (this.operator) {
 						case '+':
