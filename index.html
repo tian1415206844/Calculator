@@ -170,20 +170,24 @@
 					switch (this.operator) {
 						case '+':
 							this.result = (parseFloat(this.data1) + parseFloat(this.data2)).toString();
-						break;
+							this.operator='';
+							break;
 						case '-':
 							this.result = (parseFloat(this.data1) - parseFloat(this.data2)).toString();
-						break;
+							this.operator='';
+							break;
 						case '*':
 							this.result = (parseFloat(this.data1) * parseFloat(this.data2)).toString();
-						break;
+							this.operator='';
+							break;
 						case '/':
 							this.result = (parseFloat(this.data1) / parseFloat(this.data2)).toString();
-						break;
+							this.operator='';
+							break;
 						default:
 							this.result = this.temp;
 					}
-					this.result=this.result.substring(0,10);
+					this.result = this.result.substring(0, 10);
 				}
 			},
 			number: function(event) {
