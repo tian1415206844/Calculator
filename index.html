@@ -39,7 +39,8 @@
 				data2: '',
 				data: '',
 				result: '',
-				operator:''
+				operator:'',
+				temp:''
 			},
 			methods: {
 			add: function() {
@@ -159,6 +160,7 @@
 				this.result += '/';
 			},
 			equal: function() {
+				this.temp=this.result;
 				this.result = '';
 				if(this.data!=''){
 					this.data2 = this.data;
@@ -179,7 +181,7 @@
 							this.result = (parseFloat(this.data1) / parseFloat(this.data2)).toString();
 						break;
 						default:
-							this.result = this.data1;
+							this.result = this.temp;
 					}
 					this.result=this.result.substring(0,10);
 				}
