@@ -9,7 +9,7 @@
 				<td width="250"><input type="button" v-on:click="number" value="7" /></td>
 				<td width="250"><input type="button" v-on:click="number" value="8" /></td>
 				<td width="250"><input type="button" v-on:click="number" value="9" /></td>
-				<td width="250"></td>
+				<td width="250"><input type="button" v-on:click="clear" value="C" /></td>
 				<td width="250"></td>
 			</tr>
 			<tr>
@@ -172,6 +172,9 @@
 				this.data += '';
 				this.result += '';
 			}
+		},
+		clear:function(){
+			this.result='';
 		}
 	},
 	})
