@@ -169,33 +169,28 @@
 				}
 				if (this.data1 == '' && this.data2 != ''&&this.data11!='') {
 					switch (this.operator) {
-						case '+':
-							this.result = (parseFloat(this.data11) + parseFloat(this.data2)).toString();
-							this.operator='';
-							break;
-						case '-':
-							this.result = (parseFloat(this.data11) - parseFloat(this.data2)).toString();
-							this.operator='';
-							break;
-						case '*':
-							this.result = (parseFloat(this.data11) * parseFloat(this.data2)).toString();
-							this.operator='';
-							break;
-						case '/':
-							this.result = (parseFloat(this.data11) / parseFloat(this.data2)).toString();
-							this.operator='';
-							break;
-						default:
-							this.result = this.temp;
+					case '+':
+						this.result = (parseFloat(this.data11) + parseFloat(this.data2)).toString();
+						this.operator='';
+						break;
+					case '-':
+						this.result = (parseFloat(this.data11) - parseFloat(this.data2)).toString();
+						this.operator='';
+						break;
+					case '*':
+						this.result = (parseFloat(this.data11) * parseFloat(this.data2)).toString();
+						this.operator='';
+						break;
+					case '/':
+						this.result = (parseFloat(this.data11) / parseFloat(this.data2)).toString();
+						this.operator='';
+						break;
+					default:
+						this.result = this.temp;
 					}
 					this.result = this.result.substring(0, 10);
 					this.data11=this.result;
-				}else{
-					this.result = this.temp;
-					this.result = this.result.substring(0, 10);
-					this.data11=this.result;
-				}
-				if (this.data1 != '' && this.data2 != '') {
+				}else if (this.data1 != '' && this.data2 != '') {
 					switch (this.operator) {
 						case '+':
 							this.result = (parseFloat(this.data1) + parseFloat(this.data2)).toString();
@@ -223,7 +218,6 @@
 					this.result = this.temp;
 					this.result = this.result.substring(0, 10);
 					this.data11=this.result;
-					this.data1='';
 				}
 			},
 			number: function(event) {
